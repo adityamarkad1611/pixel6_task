@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.part1 {
+    color: white;
+    border-radius: 0 20px 20px 0;
+    width: 50vw;
+    height: 100vh;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10vw;
+
+}
+
+.part1>img {
+    margin-bottom: 5vh;
+}
+
+.part2 {
+    background: white;
+    width: 40vw;
+    margin: 10vh 5vw;
+    padding: 20px;
+    border-radius: 20px;
+    padding-left: 5vw;
+}
+
+#loanForm{
+    padding-top: 5vh;
+}
+
+h1 {
+    padding: 10px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid grey;
+
+}
+
+input:focus {
+
+    outline: none !important;
+    border-color: #c50000;
+
+}
+
+span.error {
+    color: red;
+    font-size: 0.875em;
+    margin-bottom: 10px;
+}
+
+button {
+    color: white;
+    display: block;
+    margin: 20px 0;
+    padding: 10px 40px;
+    font-size: 1em;
+    background-color: #111111;
+    border: 2px solid transparent;
+    width: 63%;
+    border-radius: 10px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.otppg {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.part3{
+    width: 30vw;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    background: white;
+    width: 70vw;
+    padding:0 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    input{
+        width: 20vw;
+        text-align: center;
+    }
+    button{
+        width: 20vw;
+    }
+
+    
+   
+}
+
+
+
+.container2>img{
+    width: 20vw;
+    height: 25vh;
+}
+
+#verificationMessage{
+    color: red;
+}

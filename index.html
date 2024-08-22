@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="part1">
+            <img src="https://pixel6.co/wp-content/uploads/2024/08/pixel6-logo-header.png" alt="">
+            <h1>Get Your First Loan With Us</h1>
+            <h1 style="color:#C01A20; margin-bottom: 5vh;">Pixel6</h1>
+            <p>Trusted over 10+ million indian, Indian's first instant loan platform.</p>
+        </div>
+        <div class="part2">
+            <h2>Loan Application Form</h2>
+            <form id="loanForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                <span class="error" id="fullNameError"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Johndoe@xyz.com">
+                <span class="error" id="emailError"></span>
+
+                <label for="pan">PAN:</label>
+                <input type="text" id="pan" name="pan" required placeholder="ABCDE1234S">
+                <span class="error" id="panError"></span>
+
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="text" id="loanAmount" name="loanAmount" required placeholder="xxxx">
+                <br>
+                <span id="amountInWords"></span>
+                <span class="error" id="loanAmountError"></span>
+
+                <label for="emi">Estimated EMI:</label>
+                <span id="estimatedEmi"></span>
+
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
