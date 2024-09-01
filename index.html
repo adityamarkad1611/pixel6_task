@@ -11,7 +11,7 @@
 <body>
     <div class="main">
         <div class="part1">
-            <img src="https://pixel6.co/wp-content/uploads/2024/08/pixel6-logo-header.png" alt="">
+            <img src="pixel6-website-header.svg" alt="">
             <h1>Get Your First Loan With Us</h1>
             <h1 style="color:#C01A20; margin-bottom: 5vh;">Pixel6</h1>
             <p>Trusted over 10+ million Indian, Indian's first instant loan platform.</p>
@@ -36,7 +36,16 @@
                 <br>
                 <span id="amountInWords"></span>
                 <span class="error" id="loanAmountError"></span>
-
+                <div class="form-group">
+                    <label for="tenure">Select Tenure:</label>
+                    <select id="tenure" name="tenure" required>
+                        <option value="3">3 Months</option>
+                        <option value="6">6 Months</option>
+                        <option value="9">9 Months</option>
+                        <option value="15">15 Months</option>
+                    </select>
+                    <div id="tenureError" class="error"></div>
+                </div>
                 <label for="emi">Estimated EMI:</label>
                 <span id="estimatedEmi"></span>
 

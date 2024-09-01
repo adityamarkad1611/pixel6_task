@@ -35,7 +35,7 @@ body {
 .part2 {
     background: white;
     width: 40vw;
-    margin: 10vh 5vw;
+    margin: 5vh 5vw;
     padding: 20px;
     border-radius: 20px;
     padding-left: 5vw;
@@ -143,3 +143,8 @@ button:hover {
 #verificationMessage{
     color: red;
 }
+
+
+
+
+
