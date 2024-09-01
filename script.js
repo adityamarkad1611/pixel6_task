@@ -7,7 +7,7 @@ const panInput = document.getElementById('pan');
 const loanAmountInput = document.getElementById('loanAmount');
 const amountInWordsSpan = document.getElementById('amountInWords');
 const estimatedEmiSpan = document.getElementById('estimatedEmi');
-const tenure = document.getElementById('tenure').value;
+const tenure = document.getElementById('tenure');
 
 // Validation regex form of fullname and pan 
 const fullNamePattern = /^[A-Za-z]{4,}(?:\s[A-Za-z]{4,})+$/;
@@ -18,7 +18,7 @@ fullNameInput.addEventListener('input', validateFullName);
 emailInput.addEventListener('input', validateEmail);
 panInput.addEventListener('input', validatePan);
 loanAmountInput.addEventListener('input', handleLoanAmountInput);
-
+tenure.addEventListener('change', handleLoanAmountInput)
 
 form.addEventListener('submit', (event) => {
     if (!validateFullName() || !validateEmail() || !validatePan() || !validateLoanAmount()) {
@@ -71,7 +71,7 @@ function handleLoanAmountInput() {
         const amountInWords = convertNumberToWords(Number(loanAmount));
         amountInWordsSpan.textContent = amountInWords ? `${amountInWords} Rs.` : '';
 
-        const emi = calculateEMI(loanAmount, 8.5, tenure);
+        const emi = calculateEMI(loanAmount, 8.5, tenure.value);
         estimatedEmiSpan.textContent = emi ? `₹${emi.toFixed(2)}` : '';
     } else {
         amountInWordsSpan.textContent = '';
